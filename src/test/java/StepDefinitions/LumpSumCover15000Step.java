@@ -13,10 +13,12 @@ public class LumpSumCover15000Step extends PageObject {
     LumpSumCover15000 lumpSumCover15000;
 
 
-    @Given("user log in SGUI or shamba  website")
-    public void user_log_in_sgui_or_shamba_website() throws InterruptedException {
+    @Given("user log in SGUI or shamba  website {string}, {string}")
+    public void user_log_in_sgui_or_shamba_website(String string, String string2) throws InterruptedException {
+
+
         lumpSumCover15000.OpenWebsite();
-        lumpSumCover15000.loginIn("WRambau@clientele.co.za", "clientele003");
+        lumpSumCover15000.loginIn("spadayachy@clientele.co.za", "Marvel_2023");
         lumpSumCover15000.ClienteleLogo();
         lumpSumCover15000.CaptureSale();
         lumpSumCover15000.LeadBasket();
@@ -25,22 +27,26 @@ public class LumpSumCover15000Step extends PageObject {
         lumpSumCover15000.ActionSaleButton();
 
     }
-    @When("user Select the plan option: Individual or member and family")
-    public void user_select_the_plan_option_individual_or_member_and_family() throws InterruptedException {
+    @Then("Individual COver")
+    public void individual_c_over() throws InterruptedException {
+
+
         lumpSumCover15000.HelpIconButton();
         lumpSumCover15000.SelectPlanTextDropdown("YF");
         lumpSumCover15000.SelectPlanOkBtn();
 
     }
-    @Then("user Select the date of birth of the main life assured")
-    public void user_select_the_date_of_birth_of_the_main_life_assured() throws InterruptedException {
+    @Then("DOB")
+    public void dob() throws InterruptedException {
+
         lumpSumCover15000.GetRatesBtn();
         lumpSumCover15000.SelectPlanOption();
-        lumpSumCover15000.SelectDoB("1961-06-03");
+        lumpSumCover15000.SelectDoB("2021-12-08");
 
     }
-    @When("user On the slider select the cover amounts that are applicable to the plan chosen")
-    public void user_on_the_slider_select_the_cover_amounts_that_are_applicable_to_the_plan_chosen() throws InterruptedException {
+    @Then("Cover Amount")
+    public void cover_amount() throws InterruptedException {
+
         lumpSumCover15000.selectCoverAmount();
         lumpSumCover15000.ViewRates();
         lumpSumCover15000.StartSale();
@@ -51,8 +57,8 @@ public class LumpSumCover15000Step extends PageObject {
         lumpSumCover15000.EnterSurname("Mills");
         lumpSumCover15000.selectSACitizen("Yes");
         lumpSumCover15000.clickTextBox();
-        lumpSumCover15000.enterID("6106037505186");
-        lumpSumCover15000.confirmID("6106037505186");
+        lumpSumCover15000.enterID("1811086512604");
+        lumpSumCover15000.confirmID("1811086512604");
         lumpSumCover15000.clickOKButton();
         lumpSumCover15000.EnterDoB("2022-06-03");
         lumpSumCover15000.selectMonthlyIncome("Up to 3,000");
@@ -70,8 +76,8 @@ public class LumpSumCover15000Step extends PageObject {
         lumpSumCover15000.enterName("Joy");
         lumpSumCover15000.enterSurname("McGregor");
         lumpSumCover15000.fieldTextID();
-        lumpSumCover15000.mainIDPopUp("9606035120182");
-        lumpSumCover15000.confirmationID("9606035120182");
+        lumpSumCover15000.mainIDPopUp("2211088659322");
+        lumpSumCover15000.confirmationID("2211088659322");
         lumpSumCover15000.clickOK();
         lumpSumCover15000.PayerRelation("Sister");
         lumpSumCover15000.selectDebit("1");
@@ -88,8 +94,9 @@ public class LumpSumCover15000Step extends PageObject {
         lumpSumCover15000.confCheckBoxes();
         lumpSumCover15000.clickSaveBtn();
     }
-    @Then("user proceed with the cover and conclude sale")
-    public void user_proceed_with_the_cover_and_conclude_sale() throws InterruptedException {
+    @Then("Conclude sale")
+    public void conclude_sale() throws InterruptedException {
+
         lumpSumCover15000.navigateBeneficiary();
         lumpSumCover15000.addBeneficiary();
         lumpSumCover15000.selectRelation("Member Estate");

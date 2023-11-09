@@ -308,8 +308,15 @@ public class LumpSumCover15000 extends PageObject {
 
         $(By.xpath(SliderBarXpath)).click();
 
-        WebElement sliderPointer = $(By.xpath("//span[@aria-label='ngx-slider']"));
+        WebElement sliderPointer = $(By.xpath("//span[3]//ngx-slider-tooltip-wrapper[1]//div[1]"));
         sliderPointer.click();
+
+
+
+//        $(By.xpath(SliderBarXpath)).click();
+//
+//        WebElement sliderPointer = $(By.xpath("//span[@aria-label='ngx-slider']"));
+//        sliderPointer.click();
 
     }
 
@@ -836,11 +843,11 @@ public class LumpSumCover15000 extends PageObject {
 
     @Step("Debi-check page")
     public void debiCheck()throws InterruptedException{
-        Thread.sleep(4000);
+        Thread.sleep(10000);
 
 
         $(By.xpath(ConfirmDebiCheckXpath)).click();
-        Thread.sleep(2000);
+        Thread.sleep(7000);
 
 
         $(By.xpath("//span[@class='title'][1]")).click();
@@ -853,12 +860,13 @@ public class LumpSumCover15000 extends PageObject {
 
     @Step("View summary table page")
     public void summaryTable()throws InterruptedException{
+
         WebDriverWait wait = new WebDriverWait(getDriver(),Duration.ofSeconds(10));
 
        WebElement bootstrap = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(SummaryTableXpath)));
         bootstrap.click();
 
-       getDriver().wait(60000);
+       getDriver().wait(10000);
 
     }
 }
