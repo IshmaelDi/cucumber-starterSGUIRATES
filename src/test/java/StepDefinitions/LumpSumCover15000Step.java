@@ -41,7 +41,7 @@ public class LumpSumCover15000Step extends PageObject {
 
         lumpSumCover15000.GetRatesBtn();
         lumpSumCover15000.SelectPlanOption();
-        lumpSumCover15000.SelectDoB("2021-12-08");
+        lumpSumCover15000.SelectDoB("2019-12-09");
 
     }
     @Then("Cover Amount")
@@ -57,16 +57,16 @@ public class LumpSumCover15000Step extends PageObject {
         lumpSumCover15000.EnterSurname("Mills");
         lumpSumCover15000.selectSACitizen("Yes");
         lumpSumCover15000.clickTextBox();
-        lumpSumCover15000.enterID("1811086512604");
-        lumpSumCover15000.confirmID("1811086512604");
+        lumpSumCover15000.enterID("1912098950590");
+        lumpSumCover15000.confirmID("1912098950590");
         lumpSumCover15000.clickOKButton();
-        lumpSumCover15000.EnterDoB("2022-06-03");
+        lumpSumCover15000.EnterDoB("2019-12-09");
         lumpSumCover15000.selectMonthlyIncome("Up to 3,000");
         lumpSumCover15000.selectOccupation("Sales and services");
         lumpSumCover15000.selectEduction("Matric");
         lumpSumCover15000.enterCellNum("0601234231");
         lumpSumCover15000.enterPostalAddress("Plot 30 ward 55 ");
-        lumpSumCover15000.enterPostalCode("1234");
+        lumpSumCover15000.enterPostalCode("0152");
         lumpSumCover15000.clickCopyPhysical();
         lumpSumCover15000.clickValidateBtn();
         lumpSumCover15000.clickSaveMMBtn();
