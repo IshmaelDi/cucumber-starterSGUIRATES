@@ -41,7 +41,7 @@ public class LumpSumCover15000Step extends PageObject {
 
         lumpSumCover15000.GetRatesBtn();
         lumpSumCover15000.SelectPlanOption();
-        lumpSumCover15000.SelectDoB("2019-12-09");
+        lumpSumCover15000.SelectDoB("1973-12-09");
 
     }
     @Then("Cover Amount")
@@ -57,8 +57,8 @@ public class LumpSumCover15000Step extends PageObject {
         lumpSumCover15000.EnterSurname("Mills");
         lumpSumCover15000.selectSACitizen("Yes");
         lumpSumCover15000.clickTextBox();
-        lumpSumCover15000.enterID("1912098950590");
-        lumpSumCover15000.confirmID("1912098950590");
+        lumpSumCover15000.enterID("7312097983087");
+        lumpSumCover15000.confirmID("7312097983087");
         lumpSumCover15000.clickOKButton();
         lumpSumCover15000.EnterDoB("2019-12-09");
         lumpSumCover15000.selectMonthlyIncome("Up to 3,000");
@@ -76,8 +76,8 @@ public class LumpSumCover15000Step extends PageObject {
         lumpSumCover15000.enterName("Joy");
         lumpSumCover15000.enterSurname("McGregor");
         lumpSumCover15000.fieldTextID();
-        lumpSumCover15000.mainIDPopUp("2211088659322");
-        lumpSumCover15000.confirmationID("2211088659322");
+        lumpSumCover15000.mainIDPopUp("9812096469324");
+        lumpSumCover15000.confirmationID("9812096469324");
         lumpSumCover15000.clickOK();
         lumpSumCover15000.PayerRelation("Sister");
         lumpSumCover15000.selectDebit("1");

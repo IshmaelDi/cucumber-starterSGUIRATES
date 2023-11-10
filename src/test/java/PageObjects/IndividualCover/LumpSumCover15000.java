@@ -843,13 +843,16 @@ public class LumpSumCover15000 extends PageObject {
 
     @Step("Debi-check page")
     public void debiCheck()throws InterruptedException{
-        Thread.sleep(10000);
+        WebDriverWait wait = new WebDriverWait(getDriver(),Duration.ofSeconds(10));
 
+        WebElement Dc = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConfirmDebiCheckXpath)));
+//        WebElement TI = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='title'][1]")));
+//        TI.click();
 
-        $(By.xpath(ConfirmDebiCheckXpath)).click();
-        Thread.sleep(7000);
-
-
+//        $(By.xpath(ConfirmDebiCheckXpath)).click();
+//        Thread.sleep(10000);
+//
+//
         $(By.xpath("//span[@class='title'][1]")).click();
 
 
